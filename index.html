@@ -5,54 +5,56 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class = "main">
-	<div class="form-container">
-        <div= "alc">
-		<h2>LOST ITEM FORM</h2>
-		<form id="lost-item-form">
+		<div class = "main">
+		<div class="form-container">
+			<h2>LOST ITEM FORM</h2>
+			<form id="lost-item-form">
 
-			<label for="item-name">Item Name:</label>
-			<input type="text" id="item-name" name="item-name" required>
+				<label for="item-name">Item Name:</label>
+				<input type="text" id="item-name text-color" name="item-name" required>
+	
+				<label for="item-category"  >Item Category:</label>
+				
+				<select id="item-category " name="item-category" required style="width: 95%;">
+					<option value="">Select a category</option>
+					<option value="Electronics">Electronics(Phone/Laptop/Tablet/Earphone)</option>
+					<option value="Clothing">Clothing(Cap/Others)</option>
+					<option value="Jewelry">Jewelry(Ring/Necklace)</option>
+					<option value="Books">Books(Notebooks/Textbooks/Others)</option>
+					<option value="Other">Personal Belongings(Bag/Bottle/Wallet/Keys/Specs/Watch/Others)</option>
+					<option value="Other">Other</option>
+				</select>
 
-			<label for="item-category">Item Category:</label>
-			<select id="item-category" name="item-category" required>
-				<option value="">Select a category</option>
-				<option value="Electronics">Electronics(Phone/Laptop/Tablet/Earphone)</option>
-				<option value="Clothing">Clothing(Cap/Others)</option>
-				<option value="Jewelry">Jewelry(Ring/Necklace)</option>
-				<option value="Books">Books(Notebooks/Textbooks/Others)</option>
-				<option value="Other">Personal Belongings(Bag/Bottle/Wallet/Keys/Specs/Watch/Others)</option>
-                <option value="Other">Other</option>
-			</select>
-
-            <label for="item-location">Location:</label>
-			<input type="text" id="item-location" name="item-location" required>
-
-            <label for="item-date">Date:</label>
-			<input type="date" id="item-date" name="item-date" required>
-            
-            <label for="item-time">Location:</label>
-			<input type="time" id="item-time" name="item-time" required>
-            
-			<label for="description">Description:</label>
-			<textarea id="description" name="description" rows="5" required></textarea>
-
-            <h2>YOUR INFORMATION</h2>
-
-			<label for="contact-name">Your Name:</label>
-			<input type="text" id="contact-name" name="contact-name" required>
-
-            <label for="contact-name">Your Phone Number:</label>
-			<input type="number" id="phone-number" name="phone-number" required>
-
-			<label for="contact-email">Your Email:</label>
-			<input type="email" id="contact-email" name="contact-email" required>
-            <div class = "sub">
-			    <button type="submit">Submit</button>
-            </div>
-            </div>
-		</form>
-	</div>
+				<label for="item-location">Location:</label>
+				<input type="text" id="item-location text-color" name="item-location" required>
+				
+	
+				<label for="item-date">Date:</label>
+				<input type="date" id="item-date text-color" name="item-date" required>
+				
+				<label for="item-time">Time:</label>
+				<input type="time" id="item-time" name="item-time" required>
+				
+				<label for="description">Description:</label>
+				<textarea id="description"  name="description" rows="5" required style="width: 95%"></textarea> 
+	
+				<h2>YOUR INFORMATION</h2>
+	
+				<label for="contact-name">Your Name:</label>
+				<input type="text" id="contact-name" name="contact-name" required>
+	
+				<label for="phone-number">Your Phone Number:</label>
+				<input type="number" id="phone-number" name="phone-number" required>
+	
+				<label for="contact-email">Your Email:</label>
+				<input type="email" id="contact-email" name="contact-email" required>
+				<div class = "sub">
+					<button type="submit">Submit</button>
+				</div>
+				</div>
+			</form>
+		</div>
+	
 </div>	
 <script src="script.js"></script>
 </body>
